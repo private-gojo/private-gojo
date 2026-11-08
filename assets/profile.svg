@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="100%" height="220" role="img" aria-labelledby="title desc">
+  <title id="title">Profile / Introduction</title>
+  <desc id="desc">A living pulse dot, a waving multicolor introduction, and six typed phrases in sequence.</desc>
+
+  <style>
+    .w { animation: wave 1.8s ease-in-out infinite; }
+    @keyframes wave {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+
+    .gc { animation: gl-c 2.4s steps(1, end) infinite; opacity: 0; }
+    .gm { animation: gl-m 2.4s steps(1, end) infinite; opacity: 0; }
+    .gb { animation: gl-b 2.4s steps(1, end) infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes gl-c {
+      0%, 60% { transform: translate(0, 0); opacity: 0; }
+      61% { transform: translate(-5px, 1px); opacity: .85; }
+      63% { transform: translate(4px, -1px); opacity: .85; }
+      65% { transform: translate(-5px, 0); opacity: .85; }
+      72%, 86% { transform: translate(0, 0); opacity: 0; }
+      87% { transform: translate(4px, -1px); opacity: .85; }
+      89% { transform: translate(-5px, 1px); opacity: .85; }
+      91%, 100% { transform: translate(0, 0); opacity: 0; }
+    }
+    @keyframes gl-m {
+      0%, 60% { transform: translate(0, 0); opacity: 0; }
+      61% { transform: translate(5px, -1px); opacity: .85; }
+      63% { transform: translate(-4px, 1px); opacity: .85; }
+      65% { transform: translate(5px, 0); opacity: .85; }
+      72%, 86% { transform: translate(0, 0); opacity: 0; }
+      87% { transform: translate(-4px, 1px); opacity: .85; }
+      89% { transform: translate(5px, -1px); opacity: .85; }
+      91%, 100% { transform: translate(0, 0); opacity: 0; }
+    }
+    @keyframes gl-b {
+      0%, 60% { transform: none; }
+      61% { transform: translate(4px, 0) skewX(-8deg); }
+      63% { transform: translate(-5px, 0) skewX(6deg); }
+      65% { transform: translate(4px, 0); }
+      67%, 86% { transform: none; }
+      87% { transform: translate(-5px, 0) skewX(10deg); }
+      89% { transform: translate(4px, 0) skewX(-4deg); }
+      91%, 100% { transform: none; }
+    }
+  </style>
+
+  <circle cx="30" cy="30" r="4" fill="none" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;16" dur="1.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.6 0.4 1"/>
+    <animate attributeName="opacity" values="0.8;0" dur="1.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.6 0.4 1"/>
+    <animate attributeName="stroke" values="#fb923c;#4ade80;#fb923c" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="30" cy="30" r="4" fill="none" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;16" dur="1.6s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.6 0.4 1"/>
+    <animate attributeName="opacity" values="0.8;0" dur="1.6s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.6 0.4 1"/>
+    <animate attributeName="stroke" values="#fb923c;#4ade80;#fb923c" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="30" cy="30" r="4" fill="#fb923c">
+    <animate attributeName="r" values="4;7;4" dur="1.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+    <animate attributeName="fill" values="#fb923c;#4ade80;#fb923c" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="48" y="36" fill="#7f8da8" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="17" letter-spacing="2">PROFILE / INTRODUCTION</text>
+
+  <defs>
+    <clipPath id="intro-clip">
+      <rect x="437" y="60" width="0" height="70">
+        <animate attributeName="width" values="0;330;330;0;0" keyTimes="0;0.0375;0.95625;0.98125;1" dur="32s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="p1-clip">
+      <rect x="373" y="140" width="0" height="55">
+        <animate attributeName="width" values="0;0;458;458;0;0" keyTimes="0;0.075;0.1125;0.16875;0.1875;1" dur="32s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="p2-clip">
+      <rect x="331" y="140" width="0" height="55">
+        <animate attributeName="width" values="0;0;542;542;0;0" keyTimes="0;0.20625;0.246875;0.303125;0.321875;1" dur="32s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="p3-clip">
+      <rect x="113" y="140" width="0" height="55">
+        <animate attributeName="width" values="0;0;978;978;0;0" keyTimes="0;0.340625;0.41875;0.4875;0.50625;1" dur="32s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="p4-clip">
+      <rect x="314" y="140" width="0" height="55">
+        <animate attributeName="width" values="0;0;575;575;0;0" keyTimes="0;0.525;0.571875;0.628125;0.646875;1" dur="32s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="p5-clip">
+      <rect x="331" y="140" width="0" height="55">
+        <animate attributeName="width" values="0;0;542;542;0;0" keyTimes="0;0.665625;0.70625;0.7625;0.78125;1" dur="32s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="p6-clip">
+      <rect x="230" y="140" width="0" height="55">
+        <animate attributeName="width" values="0;0;743;743;0;0" keyTimes="0;0.8;0.8625;0.9375;0.95625;1" dur="32s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <defs>
+    <g id="intro-glyphs" font-family="Fira Code, ui-monospace, monospace" font-size="34" text-anchor="middle">
+      <text class="w" style="animation-delay:0s;fill:var(--g,#ae4f4f)" x="447.2" y="108">Y</text>
+      <text class="w" style="animation-delay:0.08s;fill:var(--g,#b0662a)" x="467.6" y="108">o</text>
+      <text class="w" style="animation-delay:0.16s;fill:var(--g,#b08619)" x="488" y="108">u</text>
+      <text class="w" style="animation-delay:0.24s;fill:var(--g,#72a125)" x="508.4" y="108">&#8217;</text>
+      <text class="w" style="animation-delay:0.32s;fill:var(--g,#349b5a)" x="528.8" y="108">v</text>
+      <text class="w" style="animation-delay:0.4s;fill:var(--g,#1f9486)" x="549.2" y="108">e</text>
+      <text class="w" style="animation-delay:0.56s;fill:var(--g,#2784ae)" x="590" y="108">f</text>
+      <text class="w" style="animation-delay:0.64s;fill:var(--g,#4374af)" x="610.4" y="108">o</text>
+      <text class="w" style="animation-delay:0.72s;fill:var(--g,#7561af)" x="630.8" y="108">u</text>
+      <text class="w" style="animation-delay:0.8s;fill:var(--g,#865cb0)" x="651.2" y="108">n</text>
+      <text class="w" style="animation-delay:0.88s;fill:var(--g,#ab507f)" x="671.6" y="108">d</text>
+      <text class="w" style="animation-delay:1.04s;fill:var(--g,#b04f5d)" x="712.4" y="108">m</text>
+      <text class="w" style="animation-delay:1.12s;fill:var(--g,#b0662a)" x="732.8" y="108">e</text>
+      <text class="w" style="animation-delay:1.2s;fill:var(--g,#b08619)" x="753.2" y="108">!</text>
+    </g>
+  </defs>
+
+  <rect x="415" y="68" width="370" height="60" rx="12" fill="#111827" stroke="#64748b" stroke-width="1" stroke-opacity="0.25" opacity="0">
+    <animate attributeName="opacity" values="0;0.65;0.65;0;0" keyTimes="0;0.0375;0.95625;0.98125;1" dur="32s" repeatCount="indefinite"/>
+  </rect>
+
+  <g clip-path="url(#intro-clip)">
+    <use href="#intro-glyphs" class="gc" style="--g:#22d3ee"/>
+    <use href="#intro-glyphs" class="gm" style="--g:#f43f5e"/>
+    <g class="gb"><use href="#intro-glyphs"/></g>
+  </g>
+
+  <g font-family="Fira Code, ui-monospace, monospace" font-size="28">
+    <text x="373" y="180" fill="#fbbf24" textLength="454" lengthAdjust="spacing" clip-path="url(#p1-clip)">Curiosity drives discovery.</text>
+    <text x="331" y="180" fill="#38bdf8" textLength="538" lengthAdjust="spacing" clip-path="url(#p2-clip)">Questions lead to understanding.</text>
+    <text x="113" y="180" fill="#4ade80" textLength="974" lengthAdjust="spacing" clip-path="url(#p3-clip)">Ideas become reality through experimentation and creation.</text>
+    <text x="314.5" y="180" fill="#f87171" textLength="571" lengthAdjust="spacing" clip-path="url(#p4-clip)">Every bug is a lesson in disguise.</text>
+    <text x="331" y="180" fill="#fb923c" textLength="538" lengthAdjust="spacing" clip-path="url(#p5-clip)">Break it, fix it, understand it.</text>
+    <text x="230.5" y="180" fill="#c084fc" textLength="739" lengthAdjust="spacing" clip-path="url(#p6-clip)">Keep building. Keep learning. Keep shipping.</text>
+  </g>
+</svg>
